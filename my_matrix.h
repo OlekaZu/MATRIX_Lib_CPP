@@ -28,6 +28,7 @@ class MyMatrix {
   MyMatrix CalcComplements();
   MyMatrix InverseMatrix();
   void OutputMatrix();
+  void Clear() { MemoryFree(); }
 
   // Operators reloading
   MyMatrix operator+(const MyMatrix& other);
