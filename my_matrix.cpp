@@ -318,11 +318,6 @@ void MyMatrix::set_cols(int value_cols) {
 
 /* ---------- Protected Methods ---------- */
 void MyMatrix::MemoryAllocation() {
-  // matrix_ = new double*[rows_];
-  // matrix_[0] = new double [rows_ * cols_]{0};
-  //  for (int i = 1; i < rows_; i++)
-  // matrix_[i] = matrix_[0] + i * cols_;
-
   matrix_ = new double*[rows_];
   for (int i = 0; i < rows_; i++) matrix_[i] = new double[cols_]{0};
 }
