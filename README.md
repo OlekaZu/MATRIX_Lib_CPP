@@ -1,5 +1,9 @@
 # PROJECT_MATRIX_CPP
-The static library helps work with matrices using class MyMatrix in *MacOS* or *Linux OS*.
+The static library helps work with matrices using class MyMatrix. 
+
+The library is developed in **C++ language of C++17 standard** using **gcc(g++)** compiler.
+
+_**The Compilation is checked only on MacOS and Linux Ubuntu 20.04.**_
 
 The library uses *double* data type for matrices.
 
@@ -119,3 +123,13 @@ int get_cols();
 void set_rows(int value_rows);
 void set_cols(int value_cols);
 ```
+
+
+### Testing
+You can test the library using my unit-tests (file **test.cpp**). 
+
+The tests are made by using the GTest library. Apply the next Makefile instructions for checking tests and their cover by gcov:
+```bash
+make test
+```
+Or if you don't trust in my tests you can create or add own unit-tests.
