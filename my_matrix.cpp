@@ -193,7 +193,7 @@ void MyMatrix::OutputMatrix() {
   std::cout << "Matrix output:" << std::endl;
   for (int i = 0; i < rows_; i++) {
     for (int k = 0; k < cols_; k++)
-      std::cout << std::fixed << std::setprecision(7) << matrix_[i][k] << "";
+      std::cout << std::fixed << std::setprecision(6) << matrix_[i][k] << " ";
     if (i < (rows_ - 1)) std::cout << std::endl;
   }
   std::cout << std::endl;
